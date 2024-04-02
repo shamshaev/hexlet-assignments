@@ -8,8 +8,8 @@ public class Tag {
     protected String name;
     private Map<String, String> attributes;
 
-    public Tag(String name, Map<String, String> attributes) {
-        this.name = name;
+    public Tag(String type, Map<String, String> attributes) {
+        this.name = type;
         this.attributes = attributes;
     }
 

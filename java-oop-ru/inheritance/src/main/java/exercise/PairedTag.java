@@ -18,7 +18,7 @@ public class PairedTag extends Tag {
     @Override
     public String toString() {
         var str = children.stream()
-                .map(Tag::tagToString)
+                .map(Tag::toString)
                 .collect(Collectors.joining());
         return this.tagToString() + body + str + "</" + name + ">";
     }
