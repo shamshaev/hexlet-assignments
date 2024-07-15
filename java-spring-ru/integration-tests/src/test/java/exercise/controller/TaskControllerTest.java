@@ -45,7 +45,7 @@ class ApplicationTest {
         return Instancio.of(Task.class)
                 .ignore(Select.field(Task::getId))
                 .supply(Select.field(Task::getTitle), () -> faker.lorem().word())
-                .supply(Select.field(Task::getDescription), () -> faker.lorem().paragraph())
+                .supply(Select.field(Task::getDescription), () -> faker.lorem().paragraph(2))
                 .create();
     }
 
